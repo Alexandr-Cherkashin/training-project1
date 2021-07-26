@@ -194,9 +194,9 @@ p {
 
 
 .intro {
+    height: 100vh;
     text-align: center;
     position: relative;
-    margin-bottom: 150px;
 }
 
 .intro-bg {
@@ -208,6 +208,14 @@ p {
     z-index: -1;
     background-attachment: fixed;
     background-position: center;
+}
+
+.intro_content{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateY(-30%) translateX(-50%);
+
 }
 
 .intro-title {
@@ -562,7 +570,6 @@ p {
 ====================*/
 
 @media (max-width: 1350px) {
-
     .container {
         margin: 0 2rem;
     }
@@ -600,6 +607,10 @@ p {
 
     .social {
         display: none;
+    }
+
+    .intro_content{
+        transform: translateY(-40%) translateX(-50%);
     }
 
 
@@ -667,11 +678,6 @@ p {
 
     .intro-title {
         font-size: 2rem;
-        padding-top: 40px;
-    }
-
-    .intro {
-        margin-bottom: 50px;
     }
 
 
@@ -715,7 +721,6 @@ p {
 
     .intro-title {
         font-size: 1.5rem;
-        padding-top: 40px;
     }
 }
 
